@@ -8,7 +8,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 125%;
     min-height: 100%;
     // padding: 0.4rem;
     #formContent {
@@ -23,7 +23,7 @@
       -webkit-box-shadow: 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.3);
       box-shadow: 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.3);
       text-align: center;
-
+      
       h2 {
         text-align: center;
         font-size: 0.26rem;
@@ -179,4 +179,10 @@
 
 #icon {
   width: 60%;
+}
+#img{
+  width: 8rem;
+  position: fixed;
+  left: 35%;
+  bottom: 43%;
 }

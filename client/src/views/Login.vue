@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+    <img src="../assets/logo.png" id="img" alt="logo">
     <message
       :type="this.message.type"
       :message="this.message.message"
@@ -32,14 +33,14 @@
           <input
             type="password"
             class="fadeIn third"
-            placeholder="密码"
+            placeholder="密碼"
             v-model="password"
           />
           <input
             type="button"
             @click="login"
             class="fadeIn fourth"
-            value="登录"
+            value="登入"
           />
         </form>
       </div>
@@ -100,7 +101,7 @@ export default {
               //弹窗
               this.messageBox.messageBoxEvent = "login";
               this.messageBox.visible = true;
-              this.messageBox.message = "您已登录成功";
+              this.messageBox.message = "您已登入成功";
             } else {
               console.log(res.data.text);
               // this.$message({
