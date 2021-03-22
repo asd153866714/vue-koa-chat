@@ -36,10 +36,10 @@
       </p>
       <div v-if="hasCancel" class="hasCancel">
         <p @click="cancel">取消</p>
-        <p @click="confirm">确定</p>
+        <p @click="confirm">確定</p>
       </div>
       <div v-else class="noCancel">
-        <p @click="confirm">确定</p>
+        <p @click="confirm">確定</p>
       </div>
     </div>
   </div>
@@ -191,12 +191,12 @@ export default {
     // /*padding已在重置样式中去除，如果没有去除，记得有padding哦*/
   }
   .hasCancel {
-    height: 0.6rem;
+    height: 0.9rem;
     p {
       background: transparent;
       color: #1678e5;
       font-size: 0.14rem;
-      height: 0.6rem;
+      height: 0.8rem;
       line-height: 0.6rem;
       width: 50%;
       position: absolute;
@@ -222,11 +222,11 @@ export default {
     }
   }
   .noCancel {
-    height: 0.6rem;
+    height: 0.9rem;
     p {
       background: transparent;
       color: #1678e5;
-      height: 0.6rem;
+      height: 0.8rem;
       font-size: 0.14rem;
       line-height: 0.6rem;
       width: 100%;

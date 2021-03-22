@@ -89,14 +89,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .wrapper {
+  
   // height: 100vh;
   padding-top: 0.8rem;
   background-color: #fff;
   z-index: 1;
   ul {
-    background-color: #fff;
-    padding-bottom: 0.5rem;
+    background-image: url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-repeat:no-repeat { background-repeat: no-repeat; }
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom:90%;
+    margin:auto;
     li {
       display: -webkit-box;
       display: -ms-flexbox;

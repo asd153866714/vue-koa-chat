@@ -16,9 +16,9 @@
     <div class="wrapper fadeInDown">
       <div id="formContent">
         <router-link to="/login">
-          <h2 class="inactive">登录</h2>
+          <h2 class="inactive">登入</h2>
         </router-link>
-        <h2 class="active">注册</h2>
+        <h2 class="active">注冊</h2>
 
         <div class="fadeIn first">
           <img src="../assets/icon.svg" id="icon" alt="User Icon" />
@@ -35,13 +35,13 @@
             type="password"
             class="fadeIn third"
             v-model="password"
-            placeholder="密码"
+            placeholder="密碼"
           />
           <input
             type="button"
             @click="register"
             class="fadeIn fourth"
-            value="注册"
+            value="注冊"
           />
         </form>
       </div>
@@ -88,7 +88,7 @@ export default {
                 //弹窗
                 this.messageBox.messageBoxEvent = "register";
                 this.messageBox.visible = true;
-                this.messageBox.message = "您已注册成功";
+                this.messageBox.message = "您已注冊成功";
               } else {
                 // this.$message({
                 //   message: res.data.message,

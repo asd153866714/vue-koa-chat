@@ -43,9 +43,9 @@ export default {
       if (this.currentTab === 1) {
         return "消息";
       } else if (this.currentTab === 2) {
-        return "机器人";
+        return "機器人";
       } else if (this.currentTab === 3) {
-        return "通讯录";
+        return "通訊錄";
       } else if (this.currentTab === 4) {
         return "我";
       } else {
@@ -74,11 +74,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  line-height: 0.76rem;
+  line-height: 0.96rem;
   background: #1e90ff;
   color: white;
   font-size: 0.32rem;
