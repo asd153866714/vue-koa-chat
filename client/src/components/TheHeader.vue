@@ -43,12 +43,14 @@ export default {
       if (this.currentTab === 1) {
         return "消息";
       } else if (this.currentTab === 2) {
-        return "機器人";
+        return "新聞";
       } else if (this.currentTab === 3) {
         return "通訊錄";
       } else if (this.currentTab === 4) {
         return "我";
-      } else {
+      } else if (this.currentTab === 5){
+        return "我的好友"
+      }else {
         return this.chatTitle;
       }
     },

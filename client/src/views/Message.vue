@@ -97,7 +97,7 @@ export default {
   background-color: #fff;
   z-index: 1;
   ul {
-    background-image: url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-color: black;
     background-repeat:no-repeat { background-repeat: no-repeat; }
     background-attachment: fixed;
     background-position: center;

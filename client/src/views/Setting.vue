@@ -86,11 +86,14 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
+
   position: relative;
   padding-top: 1rem;
   ul {
+    
     position: relative;
     li {
+      
       background-color: #fff;
       color: #333;
       list-style-type: none;
