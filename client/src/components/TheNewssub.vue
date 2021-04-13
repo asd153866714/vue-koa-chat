@@ -2,46 +2,44 @@
   <div class="news">
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'world'}}"
+      :to="{ name: 'newsdetail', params: { category: 'world' } }"
       >國際</router-link
     ><router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'nation'}}"
+      :to="{ name: 'newsdetail', params: { category: 'nation' } }"
       >台灣</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'business'}}"
+      :to="{ name: 'newsdetail', params: { category: 'business' } }"
       >商業</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'health'}}"
+      :to="{ name: 'newsdetail', params: { category: 'health' } }"
       >健康</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'science'}}"
+      :to="{ name: 'newsdetail', params: { category: 'science' } }"
       >科學</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'technology'}}"
+      :to="{ name: 'newsdetail', params: { category: 'technology' } }"
       >科技</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'entertainment'}}"
+      :to="{ name: 'newsdetail', params: { category: 'entertainment' } }"
       >娛樂</router-link
     >
     <router-link
       class="item"
-      :to="{name: 'newsdetail', params: {category: 'sports'}}"
+      :to="{ name: 'newsdetail', params: { category: 'sports' } }"
       >運動</router-link
     >
-    </div>
-
-  
+  </div>
 </template>
 
 <script>
@@ -51,11 +49,10 @@ export default {
     return {};
   },
   computed: {
-    category: function() {
-    return this.$route.params.category;
-    }
+    category: function () {
+      return this.$route.params.category;
+    },
   },
-  
 };
 </script>
 <style lang="scss" scoped>
@@ -73,6 +70,4 @@ export default {
   text-decoration: none;
   box-sizing: border-box;
 }
-
-
 </style>
