@@ -89,7 +89,9 @@ export default {
   // }
   .mychat {
     width: 100%;
+    display: inline-block;
     position: relative;
+    margin-top: 1.5%;
     .img {
       width: 0.6rem;
       height: 0.6rem;
@@ -101,22 +103,25 @@ export default {
     }
     .nt {
       font-size: 0.2rem;
-      left: 1.35rem;
-      top: -0.55rem;
+      left: 4rem;
+      top: -1.5rem;
       position: absolute;
       color: #686868;
       span {
-        padding-left: 0.1rem;
+        padding-left: 0.3rem;
       }
       span:nth-child(1) {
-        font-size: 0.3rem;
+        color:  #686868;
+        font-size: 1rem;
+        font-weight: 700;
       }
     }
     .msg {
       float: left;
+      
       max-width: 60%;
-      margin-left: 1.35rem;
-      padding: 0.25rem;
+      margin-left:4.5rem;
+      padding: 1rem;
       border-radius: 0.1rem;
       font-size: 0.3rem;
       line-height: 0.34rem;
@@ -124,5 +129,6 @@ export default {
       color: #fff;
     }
   }
+  
 }
 </style>

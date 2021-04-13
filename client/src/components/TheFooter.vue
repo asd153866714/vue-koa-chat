@@ -7,17 +7,13 @@
         <use v-show="currentTab !== 1" xlink:href="#icon-message1"></use>
       </svg>
     </router-link>
-    <router-link class="item" to="robot">
+    <router-link class="item" to="news">
       <svg class="icon" aria-hidden="true">
         <use v-show="currentTab === 2" xlink:href="#icon-zhinengfenxi1"></use>
         <use v-show="currentTab !== 2" xlink:href="#icon-zhinenghua"></use>
       </svg>
     </router-link>
-    <router-link
-      class="item"
-      :class="this.tabTipsGetter.addFriendReq"
-      to="contact_list"
-    >
+    <router-link class="item" to="contact_list">
       <!-- <router-link v-else class="item " to="contact_list"> -->
       <svg class="icon" aria-hidden="true">
         <use v-show="currentTab === 3" xlink:href="#icon-group_fill"></use>
