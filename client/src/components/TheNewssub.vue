@@ -2,6 +2,15 @@
   <div class="news">
     <router-link
       class="item"
+      :to="{name: 'newsdetail', params: {category: 'world'}}"
+      >國際</router-link
+    ><router-link
+      class="item"
+      :to="{name: 'newsdetail', params: {category: 'nation'}}"
+      >台灣</router-link
+    >
+    <router-link
+      class="item"
       :to="{name: 'newsdetail', params: {category: 'business'}}"
       >商業</router-link
     >
@@ -30,9 +39,9 @@
       :to="{name: 'newsdetail', params: {category: 'sports'}}"
       >運動</router-link
     >
-    
-         
-  </div>
+    </div>
+
+  
 </template>
 
 <script>
@@ -52,18 +61,18 @@ export default {
 <style lang="scss" scoped>
 .news {
   width: 100%;
-  position: fixed;
-  top: 0.9rem;
+  margin-top: 0.9rem;
+  border-bottom: 1px solid black;
+  background-color: black;
 }
 
 .item {
-  
-  color: darkcyan;
+  color: yellow;
   padding: 0.5rem;
   margin-left: 0.8rem;
   text-decoration: none;
   box-sizing: border-box;
-
 }
+
 
 </style>

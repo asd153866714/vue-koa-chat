@@ -5,12 +5,12 @@
         <li class="media" v-for="article in articles" :key="article">
           <div class="media-left">
             <a v-bind:href="article.url" target="_blank">
-              <img class="media-object" v-bind:alt="article.description" v-bind:src="article.urlToImage" />
+              <img class="media-object" v-bind:alt="article.description" v-bind:src="article.image" />
             </a>
             <div class="aaa">
               <h4 class="media-heading">
               <a v-bind:href="article.url" target="_blank">{{article.title}}</a>
-              <i class="author">{{article.author}}</i>
+              <i class="author">{{article.source.name	}}</i>
             </h4>
             </div>
             
@@ -18,7 +18,6 @@
           
         </li>
       </ul>
-      <the-footer :currentTab="currentTab"></the-footer>
     </div>
 </template>
 <script>
@@ -29,7 +28,7 @@ export default {
   
   created(){
         this.category = this.$route.params.category;
-        axios.get('https://newsapi.org/v2/top-headlines?country=tw&category='+this.category+'&apiKey=d39fe2dffbfe4268ace968ff9ba69e95')
+        axios.get('https://gnews.io/api/v4/top-headlines?country=tw&topic='+this.category+'&token=fce657bd48580e505cecf51d6a24d4fb')
         .then(response => {
             console.log(response)
             this.articles = response.data.articles
@@ -50,19 +49,19 @@ export default {
     padding: 10px;
   }
   .media {
+    background-color: black;
     border-top: 1px solid lightgrey;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding: 20px;
   }
   .author{
       padding-left: 1rem;
-      
       color: red;
     }
   .media-heading{
     display: inline-block;
     padding-left: 1rem;
     text-align: center;
-    top:0;
     
   }
 </style>
