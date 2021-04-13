@@ -2,7 +2,7 @@
 <div class="warrper">
     <the-header :currentTab="currentTab"></the-header>
     <the-newssub></the-newssub>
-    <the-newscontain></the-newscontain>
+    
     <div class="contain">
       <ul class="media-list">
         <li class="media" v-for="article in articles" :key="article">
@@ -16,9 +16,7 @@
               <i class="author">{{article.source.name	}}</i>
             </h4>
             </div>
-            
           </div>
-          
         </li>
       </ul>
     </div>
@@ -29,13 +27,11 @@
 
 <script>
 import axios from 'axios';
-
-import TheNewscontain from '../components/TheNewscontain.vue';
 import TheNewssub from '../components/TheNewssub.vue';
 
 
 export default {
-  components: { TheNewssub, TheNewscontain },
+  components: { TheNewssub},
     created(){
         this.category = this.$route.params.category;
         axios.get('https://gnews.io/api/v4/top-headlines?country=tw&topic=breaking-news&token=fce657bd48580e505cecf51d6a24d4fb')
