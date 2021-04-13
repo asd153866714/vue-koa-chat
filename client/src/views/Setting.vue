@@ -26,7 +26,7 @@
                     <p>来自：{{userInfo.place}}</p> -->
     </ul>
     <div class="action" @click="logout">
-      <span class="logout">退出登录</span>
+      <span class="logout">退出登入</span>
     </div>
     <the-footer :currentTab="currentTab"></the-footer>
   </div>
@@ -57,7 +57,7 @@ export default {
     logout() {
       this.messageBox.messageBoxEvent = "logOut";
       this.messageBox.visible = true;
-      this.messageBox.message = "确定退出？";
+      this.messageBox.message = "確定退出？";
     },
     cancel() {
       this.messageBox.visible = false;
@@ -86,11 +86,14 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
+
   position: relative;
   padding-top: 1rem;
   ul {
+    
     position: relative;
     li {
+      
       background-color: #fff;
       color: #333;
       list-style-type: none;
@@ -103,6 +106,7 @@ export default {
         width: 0.8rem;
         height: 0.8rem;
         margin-left: 0.2rem;
+        line-height: 0.46rem;
       }
       span {
         font-size: 0.28rem;
@@ -140,7 +144,7 @@ export default {
     span {
       display: inline-block;
       font-size: 0.26rem;
-      line-height: 0.26rem;
+      line-height: 0.46rem;
       padding: 0.16rem 0;
       width: 40%;
       cursor: pointer;

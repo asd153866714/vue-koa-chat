@@ -8,6 +8,9 @@ import Message from "../views/Message.vue";
 import Add from "../views/Add.vue";
 import AddSearch from "../views/AddSearch.vue";
 import PrivateChat from "../views/PrivateChat.vue";
+import News from "../views/News.vue";
+import NewsDetail from "../views/NewsDetail.vue";
+
 
 Vue.use(VueRouter);
 
@@ -57,6 +60,17 @@ const routes = [
     path: "/private_chat/:user_id",
     component: PrivateChat,
   },
+  {
+    path: "/news",
+    component: News,
+  },
+  {
+    path: '/newsdetail',
+    name: 'newsdetail',
+    component: NewsDetail,
+  },
+  
+  
 ];
 
 const router = new VueRouter({

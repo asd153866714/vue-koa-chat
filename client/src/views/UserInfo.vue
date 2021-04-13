@@ -62,25 +62,25 @@
       </p> -->
     </div>
     <div v-if="this.isAddingMe" class="action">
-      <span class="add-as-friend" @click="agreeBeFriend">通过验证</span>
+      <span class="add-as-friend" @click="agreeBeFriend">通過驗證</span>
     </div>
     <div
       v-if="this.isMyFriend === true && this.isHisFriend === true"
       class="action"
     >
-      <span class="editor-remark" @click="editorRemark">修改备注</span>
-      <span class="go-chat" @click="goChat">发消息</span>
+      <span class="editor-remark" @click="editorRemark">修改備注</span>
+      <span class="go-chat" @click="goChat">發消息</span>
       <span class="shield-it" @click="shieldIt">屏蔽此人</span>
-      <span class="de-friended" @click="deFriended">删除好友</span>
+      <span class="de-friended" @click="deFriended">刪除好友</span>
     </div>
 
     <div
       v-if="this.isMyFriend === true && this.isHisFriend === false"
       class="action"
     >
-      <span class="de-friended" @click="deFriended">删除好友</span>
+      <span class="de-friended" @click="deFriended">刪除好友</span>
       <span class="add-as-friend" @click="enterReqPage"
-        >让对方重新加自己为好友</span
+        >讓對方重新加自己為好友</span
       >
     </div>
     <div
@@ -91,7 +91,7 @@
       "
       class="action"
     >
-      <span class="go-chat" @click="goChat">发消息</span>
+      <span class="go-chat" @click="goChat">發消息</span>
     </div>
     <div
       v-if="
@@ -446,6 +446,7 @@ export default {
       cursor: pointer;
     }
     .go-chat {
+      line-height: 0.6rem;
       background-color: #4290f7;
       color: #fff;
     }
@@ -464,6 +465,7 @@ export default {
     .add-as-friend,
     .editor-info {
       background-color: #4290f7;
+      line-height: 0.6rem;
       color: #fff;
     }
   }

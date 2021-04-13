@@ -89,14 +89,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .wrapper {
+  
   // height: 100vh;
   padding-top: 0.8rem;
   background-color: #fff;
   z-index: 1;
   ul {
-    background-color: #fff;
-    padding-bottom: 0.5rem;
+    background-color: black;
+    background-repeat:no-repeat { background-repeat: no-repeat; }
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom:90%;
+    margin:auto;
     li {
       display: -webkit-box;
       display: -ms-flexbox;

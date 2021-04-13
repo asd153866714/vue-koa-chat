@@ -11,6 +11,7 @@ import MessageBox from "./components/MessageBox.vue";
 import ChatItem from "./components/ChatItem.vue";
 import Avatar from "./components/TheAvatar.vue";
 
+
 Vue.config.productionTip = false;
 
 Vue.component("the-header", Header);
